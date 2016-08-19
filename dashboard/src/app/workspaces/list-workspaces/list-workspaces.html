@@ -61,7 +61,7 @@
               che-on-checkbox-click="listWorkspacesCtrl.updateSelectedStatus()"
               che-workspace-item="workspace"></che-workspace-item>
     </che-list>
-    <div class="workspace-list-empty">
+    <div class="che-list-empty">
         <span ng-show="listWorkspacesCtrl.userWorkspaces.length > 0 && (listWorkspacesCtrl.userWorkspaces | filter:listWorkspacesCtrl.workspaceFilter).length === 0">
           No workspaces found
         </span>

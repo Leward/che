@@ -75,7 +75,7 @@
                 </div>
                 <div flex-gt-xs="25">
                   <span class="che-xs-header noselect" hide-gt-xs>Actions</span>
-                  <span class="che-list-item-name">
+                  <span class="che-list-actions">
                       <div ng-click="dockerRegistryListController.showEditRegistryDialog($event, registry)" tooltip="Edit registry">
                         <span class="material-design icon-ic_mode_edit_24px"></span>
                       </div>
@@ -85,7 +85,7 @@
             </div>
           </che-list-item>
         </che-list>
-        <div class="workspace-list-empty">
+        <div class="che-list-empty">
         <span ng-show="dockerRegistryListController.registries.length > 0 && (dockerRegistryListController.registries | filter:dockerRegistryListController.registryFilter).length === 0">
           No registries found
         </span>
